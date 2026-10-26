@@ -61,7 +61,7 @@ const ProjectRow = ({
           style={{ opacity, clipPath }}
           className="relative w-full max-w-xl overflow-hidden rounded-sm"
         >
-          <div className="relative aspect-video w-full">
+          <div className="relative aspect-[2.11/1] w-full">
             <Image
               src={project.imageUrl}
               alt={project.title}
@@ -81,7 +81,7 @@ const ProjectRow = ({
           {project.gallery.map((src, galleryIndex) => (
             <div
               key={src}
-              className="relative aspect-video overflow-hidden rounded-sm"
+              className="relative aspect-[2.11/1] overflow-hidden rounded-sm"
             >
               <Image
                 src={src}
